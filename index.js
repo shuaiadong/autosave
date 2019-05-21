@@ -4,4 +4,7 @@
  * @date 2019/5/21
  */
 
-module.exports = require('./lib');
+import autoSave from './autoSave';
+// module.exports = require('./lib');
+
+export default autoSave;
