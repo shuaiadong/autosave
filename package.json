@@ -1,0 +1,31 @@
+{
+  "name": "debounce-save",
+  "version": "1.0.0",
+  "description": "debounce save",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuaiadong/autosave.git"
+  },
+  "keywords": [
+    "autosave",
+    "save"
+  ],
+  "author": "zhd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shuaiadong/autosave/issues"
+  },
+  "homepage": "https://github.com/shuaiadong/autosave#readme"
+}
