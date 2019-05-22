@@ -1,8 +1,8 @@
 {
   "name": "debounce-save",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "debounce save",
-  "main": "index.js",
+  "main": "lib/index.min.js",
   "directories": {
     "lib": "lib",
     "test": "test"
@@ -10,9 +10,16 @@
   "dependencies": {
     "lodash": "^4.17.11"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6"
+  },
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "webpack --mode production --config ./config/webpack.config.js"
   },
   "repository": {
     "type": "git",

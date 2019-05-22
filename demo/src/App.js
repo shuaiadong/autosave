@@ -1,6 +1,7 @@
 import React from 'react';
 import {observer, inject} from 'mobx-react';
 import Store from './appStore';
+import autoSave from 'debounce-save';
 
 import './App.css';
 
@@ -20,15 +21,14 @@ class Apps extends React.Component{
   }
 
   // 1. 调用autosave
-  // autoSave = autoSave({
-  //   wait: 3000,
-  //   onSave: this.postSave,
-  //   onBeforeSave: this.beforeSave
-  // })
+  autoSave = autoSave({
+    wait: 3000,
+    onSave: this.postSave,
+    onBeforeSave: this.beforeSave
+  })
 
 
   renderLog() {
-    console.log(this)
     return <React.Fragment> 
     <pre>
       // 入参
